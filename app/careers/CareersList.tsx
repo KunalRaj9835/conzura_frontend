@@ -120,10 +120,12 @@ export default function CareersList({ jobs }: { jobs: any[] }) {
         ))}
 
         {filtered.length === 0 && (
-          <p className="text-gray-500 text-center py-10 text-[15px] font-light">
-            No jobs found for "{query}"
-          </p>
-        )}
+  <p className="text-center py-20 text-2xl font-semibold text-[#0e355d]">
+    No jobs found
+    {query ? ` for "${query}"` : ""}
+  </p>
+)}
+
       </div>
 
       {/* BOTTOM PAGINATION */}
