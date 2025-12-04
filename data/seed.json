@@ -1,0 +1,1216 @@
+{
+   "courses": [
+    {
+      "id": "course-001",
+      "title": "Full Stack Web Development Bootcamp",
+      "slug": "full-stack-web-development-bootcamp",
+      "description": "This bootcamp provides a comprehensive and structured journey into modern full-stack development, beginning with strong foundations in HTML, CSS, and JavaScript before advancing into React, Node.js, Express, and MongoDB. Learners systematically progress from understanding core web principles to architecting scalable applications that follow industry standards. Throughout the program, you will build real-world projects, integrate APIs, implement authentication flows, manage databases, and learn essential deployment workflows. By the end of this course, you will possess the technical skills, hands-on experience, and professional portfolio required to confidently pursue full-stack development roles in the software industry.",
+      "shortDescription": "Become a full-stack developer in 12 weeks with hands-on projects and mentor support.",
+      "category": "Web Development",
+      "level": "Beginner to Advanced",
+      "duration": "12 weeks",
+      "price": 499,
+      "originalPrice": 3999,
+      "instructor": "inst-001",
+      "rating": 4.8,
+      "studentsEnrolled": 1247,
+      "thumbnail": "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": true,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "HTML, CSS & JavaScript Fundamentals",
+          "topics": [
+            "HTML5 semantic structure and accessibility",
+            "Modern CSS: Flexbox, Grid and responsive layouts",
+            "Core JavaScript concepts: variables, functions, arrays, objects",
+            "ES6+ features: let/const, arrow functions, destructuring"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "React Fundamentals",
+          "topics": [
+            "React component model and JSX",
+            "Props, state and component lifecycle",
+            "Handling events and forms in React",
+            "Project: simple multi-page UI with React Router"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Advanced React Patterns",
+          "topics": [
+            "Context API and global state",
+            "Performance optimization and memoization",
+            "Custom hooks and reusable logic",
+            "Project: dashboard-style SPA with API calls"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Backend with Node.js & Express",
+          "topics": [
+            "Node.js runtime and npm ecosystem",
+            "RESTful APIs with Express",
+            "Authentication and authorization basics (JWT)",
+            "Connecting backend to MongoDB and handling errors"
+          ]
+        }
+      ],
+      "features": [
+        "Live coding sessions",
+        "1-on-1 mentorship",
+        "Career guidance",
+        "Lifetime access",
+        "Certificate of completion"
+      ]
+    },
+    {
+      "id": "course-002",
+      "title": "Data Science & Machine Learning Masterclass",
+      "slug": "data-science-machine-learning-masterclass",
+      "description": "This masterclass offers a complete and carefully structured pathway to becoming a job-ready data science professional. You will begin by building strong foundations in Python, learning how to write clean, efficient code and work confidently with libraries such as NumPy and pandas for data cleaning and transformation. From there, you will explore statistics, probability and data visualization so that you can interpret datasets and communicate insights with clarity. The course then guides you step by step through the core machine learning algorithms used in industry, including regression, classification, clustering and ensemble methods, while teaching you how to evaluate models using the right metrics and validation strategies. Throughout the program, you will work on multiple real-world projects that mirror business use cases across domains such as finance, marketing and operations. By the end, you will understand the full data science workflow from raw data to deployed model and have a strong portfolio to showcase to recruiters and hiring managers.",
+      "shortDescription": "Transform your career with in-demand data science skills and hands-on ML projects.",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "duration": "16 weeks",
+      "price": 499,
+      "originalPrice": 4499,
+      "instructor": "inst-002",
+      "rating": 4.9,
+      "studentsEnrolled": 892,
+      "thumbnail": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": true,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Python for Data Analysis",
+          "topics": [
+            "Python refresher: syntax, functions and modules",
+            "NumPy for numerical computing",
+            "Pandas for data cleaning and manipulation",
+            "Exploratory data analysis with Jupyter"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Statistics & Data Visualization",
+          "topics": [
+            "Descriptive statistics and probability distributions",
+            "Hypothesis testing and confidence intervals",
+            "Data visualization with Matplotlib and Seaborn",
+            "Hands-on mini project: explore a real dataset"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Core Machine Learning",
+          "topics": [
+            "Supervised vs unsupervised learning",
+            "Regression and classification algorithms in scikit-learn",
+            "Model evaluation: bias-variance, metrics and cross-validation",
+            "Feature engineering and preprocessing pipelines"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Advanced ML & Intro to Deep Learning",
+          "topics": [
+            "Ensemble methods: Random Forests and Gradient Boosting",
+            "Clustering and dimensionality reduction",
+            "Neural network basics with TensorFlow / Keras",
+            "Capstone: build and evaluate an end-to-end ML project"
+          ]
+        }
+      ],
+      "features": [
+        "Real-world projects",
+        "Industry mentors",
+        "Job placement support",
+        "Cloud platform credits"
+      ]
+    },
+    {
+      "id": "course-003",
+      "title": "UI/UX Design Professional Certificate",
+      "slug": "ui-ux-design-professional-certificate",
+      "description": "This certification program equips you with the complete user-centered design toolkit required to work as a modern UI/UX designer. You will start by learning how to understand users through research methods, interviews, personas and journey mapping so that every design decision is grounded in real needs. From there, you will structure information architecture, design user flows and create low-fidelity wireframes that communicate ideas quickly. As you advance, you will move into visual design, mastering layout, typography, color and hierarchy while building design systems and components in Figma that scale across products. You will also create interactive prototypes, plan and run usability tests, gather feedback and iterate your designs like a professional. Throughout the course, you will work on portfolio-ready case studies that document your full process from problem to polished solution, giving you the confidence to present your work to hiring managers and clients.",
+      "shortDescription": "Design beautiful, user-centered digital experiences with industry-standard tools.",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "10 weeks",
+      "price": 499,
+      "originalPrice": 2499,
+      "instructor": "inst-003",
+      "rating": 4.7,
+      "studentsEnrolled": 1589,
+      "thumbnail": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Foundations of UX",
+          "topics": [
+            "What is UX and why it matters",
+            "User-centered design process",
+            "Understanding users: personas and user journeys",
+            "Competitive analysis and product thinking"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Wireframing & Interaction Design",
+          "topics": [
+            "Low-fidelity wireframes and user flows",
+            "Information architecture and navigation patterns",
+            "Interaction states and micro-interactions",
+            "Usability heuristics and UX best practices"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Visual Design & Figma",
+          "topics": [
+            "Layout, typography and color systems",
+            "Designing in Figma: frames, components and auto-layout",
+            "Design tokens and reusable styles",
+            "Project: build a responsive landing page UI"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Prototyping & Portfolio",
+          "topics": [
+            "Interactive prototypes and user testing",
+            "Collecting feedback and iterating designs",
+            "Structuring a strong case study",
+            "Preparing your portfolio and presenting your work"
+          ]
+        }
+      ],
+      "features": [
+        "Portfolio building",
+        "Design critique sessions",
+        "Industry case studies"
+      ]
+    },
+    {
+      "id": "course-004",
+      "title": "Cloud Computing with AWS",
+      "slug": "cloud-computing-aws",
+      "description": "This course provides a thorough, hands-on introduction to Amazon Web Services and the core concepts of cloud architecture. You will begin by understanding the fundamentals of cloud computing, AWS global infrastructure and identity management so that you can design secure environments from day one. Then you will work with essential services such as EC2 for compute, S3 for storage, RDS and DynamoDB for data, and VPC networking components to control traffic and access. As you progress, you will explore load balancing, auto scaling, serverless architectures with Lambda and API Gateway, and monitoring with CloudWatch to keep applications healthy in production. The curriculum blends theory with practical labs and mini projects that simulate real scenarios you might face as a cloud engineer. By the end of this course, you will be able to architect and deploy reliable applications on AWS and feel well prepared for associate-level certification exams.",
+      "shortDescription": "Master Amazon Web Services and become a certified cloud professional.",
+      "category": "Cloud Computing",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "price": 499,
+      "originalPrice": 3299,
+      "instructor": "inst-001",
+      "rating": 4.6,
+      "studentsEnrolled": 743,
+      "thumbnail": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "AWS Essentials",
+          "topics": [
+            "Cloud computing concepts and AWS global infrastructure",
+            "Identity and Access Management (IAM)",
+            "EC2 instances and key pairs",
+            "Basic networking: VPC, subnets and security groups"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Storage, Databases & Networking",
+          "topics": [
+            "S3 buckets, lifecycle policies and versioning",
+            "RDS and DynamoDB basics",
+            "Elastic Load Balancing and Auto Scaling",
+            "Designing highly available architectures"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Serverless & Observability",
+          "topics": [
+            "Lambda functions and event-driven design",
+            "API Gateway for serverless APIs",
+            "CloudWatch logs, metrics and alarms",
+            "CloudFormation / IaC introduction"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Certification & Real Projects",
+          "topics": [
+            "Review of core exam domains",
+            "Practice questions and exam strategy",
+            "Capstone: deploy a multi-tier web app on AWS",
+            "Cost optimization tips and best practices"
+          ]
+        }
+      ],
+      "features": [
+        "AWS certification prep",
+        "Hands-on labs",
+        "Real-world scenarios"
+      ]
+    },
+    {
+      "id": "course-005",
+      "title": "Mobile App Development with React Native",
+      "slug": "mobile-app-development-react-native",
+      "description": "This course delivers a complete, project-driven path to building cross-platform mobile apps for Android and iOS using React Native. You will start by setting up your development environment and learning how to compose beautiful, responsive interfaces with core components and Flexbox-based layouts. From there, you will add navigation, manage state effectively, integrate REST APIs and handle forms, validation and error states so your apps feel polished and reliable. You will also work with local storage, notifications, and key native device features such as camera and location to create real-world user experiences. In the later modules, the focus shifts to performance optimisation, debugging techniques, app architecture and the full release process for the Play Store and App Store. By the end of the program, you will have multiple portfolio apps and the confidence to contribute to production React Native projects.",
+      "shortDescription": "Create stunning mobile apps with JavaScript and React Native.",
+      "category": "Mobile Development",
+      "level": "Intermediate",
+      "duration": "10 weeks",
+      "price": 499,
+      "originalPrice": 3499,
+      "instructor": "inst-002",
+      "rating": 4.7,
+      "studentsEnrolled": 634,
+      "thumbnail": "https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "React Native Basics",
+          "topics": [
+            "Setting up the React Native environment",
+            "Core components and styling with Flexbox",
+            "Navigation basics with React Navigation",
+            "State, props and component patterns on mobile"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "APIs, Storage & Native Features",
+          "topics": [
+            "Fetching data from REST APIs",
+            "Using AsyncStorage for local persistence",
+            "Accessing device features: camera, location, permissions",
+            "Handling forms and validation"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Performance & App Architecture",
+          "topics": [
+            "Global state management (Context / Redux)",
+            "Optimizing list rendering and images",
+            "Error handling and debugging",
+            "Structuring scalable React Native projects"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Publishing & Monetization",
+          "topics": [
+            "Building release apps for Android and iOS",
+            "Play Store and App Store submission steps",
+            "Push notifications and analytics",
+            "Intro to monetization: in-app purchases and ads"
+          ]
+        }
+      ],
+      "features": [
+        "iOS & Android deployment",
+        "Push notifications",
+        "App monetization"
+      ]
+    },
+    {
+      "id": "course-006",
+      "title": "Digital Marketing & SEO Mastery",
+      "slug": "digital-marketing-seo-mastery",
+      "description": "This program gives you a deep, practical understanding of modern digital marketing so you can design and execute campaigns that actually move business metrics. You will begin with the foundations of branding, audience research and marketing funnels, learning how to position products and craft messages that resonate with the right people. Then you will dive into SEO, mastering keyword research, on-page optimisation, content strategy and technical audits so websites can rank and attract organic traffic over time. The course also covers social media strategy, paid ads on platforms like Google and Meta, email marketing and automation flows that nurture leads into customers. Throughout, you will rely on analytics tools such as Google Analytics and Search Console to measure performance, run experiments and make data-driven decisions. By the end, you will be able to plan, launch and optimise complete digital marketing campaigns for your own projects, clients or employers.",
+      "shortDescription": "Learn proven strategies to drive traffic and conversions for any business.",
+      "category": "Marketing",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "price": 499,
+      "originalPrice": 1999,
+      "instructor": "inst-004",
+      "rating": 4.5,
+      "studentsEnrolled": 2134,
+      "thumbnail": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Digital Marketing Foundations",
+          "topics": [
+            "Digital marketing channels overview",
+            "Customer journey and marketing funnels",
+            "Building target personas",
+            "Creating a basic digital marketing plan"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "SEO & Content Strategy",
+          "topics": [
+            "Keyword research and search intent",
+            "On-page SEO: titles, headings, URL structure",
+            "Technical SEO basics and site audits",
+            "Content strategy and blog planning"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Social Media & Paid Ads",
+          "topics": [
+            "Organic social media strategy",
+            "Facebook / Instagram ad fundamentals",
+            "Google Ads search campaigns",
+            "Writing high-converting ad copy"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Analytics, Automation & Growth",
+          "topics": [
+            "Google Analytics and key metrics",
+            "Tracking conversions and attribution",
+            "Email marketing and automation flows",
+            "Capstone: design a campaign for a sample brand"
+          ]
+        }
+      ],
+      "features": [
+        "Google Ads certification",
+        "SEO tools access",
+        "Campaign templates"
+      ]
+    },
+    {
+      "id": "course-007",
+      "title": "Full Stack Development with Python",
+      "slug": "full-stack-python",
+      "description": "This program takes you from core Python fundamentals all the way to building and deploying complete full stack web applications with Django and Django REST Framework. You will start by revisiting essential programming concepts, then move into designing database models, building robust views and templates, and structuring scalable Django projects. As the course progresses, you will create REST APIs, implement authentication and authorization, handle file uploads, and connect your backend to a modern frontend stack. Throughout the journey, you will work on guided mini projects as well as a capstone application that brings everything together in a real-world scenario. By the end of the course, you will have the confidence to architect, build and ship production-ready applications using Python and Django.",
+      "shortDescription": "Build full stack web apps using Python, Django and REST APIs.",
+      "category": "Full Stack Development",
+      "level": "Beginner to Advanced",
+      "duration": "12 weeks",
+      "price": 499,
+      "originalPrice": 3999,
+      "instructor": "inst-001",
+      "rating": 4.8,
+      "studentsEnrolled": 310,
+      "thumbnail": "https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Live mentor-led classes",
+        "Capstone project with code review",
+        "Hands-on assignments every week",
+        "Doubt-clearing and 1:1 guidance"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Python Foundations for the Web",
+          "topics": [
+            "Core Python syntax and data structures",
+            "Functions, modules and virtual environments",
+            "Working with files and basic error handling"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Django Fundamentals",
+          "topics": [
+            "Project and app structure",
+            "Models, migrations and admin",
+            "Templates and URL routing"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Django REST Framework",
+          "topics": [
+            "Serializers and viewsets",
+            "Authentication and permissions",
+            "Building CRUD APIs"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Full Stack Project & Deployment",
+          "topics": [
+            "Connecting frontend with Django REST APIs",
+            "Environment variables and settings",
+            "Deploying to a cloud platform"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-008",
+      "title": "Full Stack Java Development (Spring Boot + React)",
+      "slug": "full-stack-java",
+      "description": "This intensive program is designed to help you become a job-ready full stack Java developer by combining Spring Boot on the backend with React on the frontend. You will begin with a solid review of modern Java and object-oriented programming, then learn how to build clean, modular REST APIs using Spring Boot, Spring Data JPA and relational databases. From there, you will explore authentication, security, validation, error handling and testing so your services are ready for real production environments. In the second half of the course, you will connect these APIs to a React interface, manage state and routing on the frontend, and create a smooth end-to-end user experience. By completing multiple projects and a final capstone, you will be able to confidently design, implement and deploy full stack Java applications used in enterprise settings.",
+      "shortDescription": "Learn Java, Spring Boot, REST APIs and React integration for enterprise apps.",
+      "category": "Full Stack Development",
+      "level": "Intermediate to Advanced",
+      "duration": "14 weeks",
+      "price": 499,
+      "originalPrice": 4299,
+      "instructor": "inst-005",
+      "rating": 4.8,
+      "studentsEnrolled": 260,
+     "thumbnail": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Industry-style backend projects",
+        "Hands-on with Spring Boot and JPA",
+        "Best practices for REST APIs",
+        "Interview preparation support"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Java and OOP Refresher",
+          "topics": [
+            "Core Java recap",
+            "OOP design principles",
+            "Collections and exception handling"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Spring Boot Essentials",
+          "topics": [
+            "Creating REST APIs with Spring Boot",
+            "Dependency injection and configuration",
+            "Working with Spring Data JPA"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Security, Testing and Frontend Integration",
+          "topics": [
+            "Spring Security basics",
+            "Unit and integration testing",
+            "Connecting a React app to Spring Boot APIs"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Enterprise Project and Deployment",
+          "topics": [
+            "Designing scalable API architecture",
+            "Database migrations and versioning",
+            "Deployment and monitoring overview"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-009",
+      "title": "Data Analytics with Excel, SQL & Power BI",
+      "slug": "data-analytics",
+      "description": "This course provides a complete, practical pathway into data analytics using the tools most commonly requested in industry: Excel, SQL and Power BI. You will begin by learning how to clean, structure and summarize raw data in Excel using formulas, pivot tables and charts that reveal important patterns. Next, you will move into SQL and learn how to query databases, join multiple tables, create aggregations and write analytical queries that answer specific business questions. Once you are comfortable working with data, you will use Power BI to build interactive dashboards and reports that turn numbers into clear visual stories for stakeholders. Along the way, you will work on realistic case studies drawn from sales, marketing, operations and finance so that you understand the context behind your analysis. By the end of the program, you will be able to handle end-to-end analytics workflows and present insights that support data-driven decisions.",
+      "shortDescription": "Learn Excel, SQL and Power BI to become a practical data analyst.",
+      "category": "Data & Analytics",
+      "level": "Beginner Friendly",
+      "duration": "10 weeks",
+      "price": 499,
+      "originalPrice": 3499,
+      "instructor": "inst-006",
+      "rating": 4.7,
+      "studentsEnrolled": 430,
+      "thumbnail": "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Real business case studies",
+        "Hands-on SQL query practice",
+        "End-to-end dashboard project",
+        "Placement-oriented curriculum"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Analytics Foundations and Excel",
+          "topics": [
+            "Role of a data analyst",
+            "Excel formulas, pivot tables and charts",
+            "Data cleaning and exploration"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "SQL for Data Analysis",
+          "topics": [
+            "Joins, aggregations and subqueries",
+            "Window functions and CTEs",
+            "Designing analytical queries"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Power BI Basics",
+          "topics": [
+            "Connecting data sources",
+            "Data modelling and relationships",
+            "Building basic dashboards"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Advanced Dashboards and Storytelling",
+          "topics": [
+            "DAX fundamentals",
+            "Interactive visuals and filters",
+            "Presenting insights to stakeholders"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-010",
+      "title": "AI & Machine Learning Foundations",
+      "slug": "ai-ml-foundations",
+      "description": "This foundations program is built to give you a strong, hands-on understanding of core machine learning concepts without requiring an advanced math background. You will start by exploring how data is prepared for modeling using Python, pandas and NumPy, learning to clean, transform and visualize datasets in a structured way. From there, you will implement key supervised learning algorithms such as linear regression, logistic regression and decision trees using scikit-learn, while learning how to evaluate them with the right metrics and validation techniques. As you progress, you will work with feature engineering, model tuning and simple pipelines that mirror the workflows used by practicing ML engineers. The course wraps up with an end-to-end project where you choose a problem, build and compare models, and present your findings like you would in a real company setting. By the end, you will understand not just how to run ML code, but how to think like a machine learning practitioner.",
+      "shortDescription": "Hands-on ML foundations with Python, scikit-learn and real datasets.",
+      "category": "AI & Machine Learning",
+      "level": "Beginner to Intermediate",
+      "duration": "12 weeks",
+      "price": 499,
+      "originalPrice": 3999,
+      "instructor": "inst-002",
+      "rating": 4.8,
+      "studentsEnrolled": 380,
+      "thumbnail": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Mathematics-light, intuition-first approach",
+        "Multiple ML projects on real datasets",
+        "End-to-end ML pipeline implementation",
+        "Doubt support and code walkthroughs"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Intro to ML and Python for Data",
+          "topics": [
+            "What is ML and where it is used",
+            "NumPy, pandas and dataframes",
+            "Exploratory data analysis"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Supervised Learning I",
+          "topics": [
+            "Regression models",
+            "Classification models",
+            "Train-test split and evaluation metrics"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Supervised Learning II and Feature Engineering",
+          "topics": [
+            "Tree-based models",
+            "Feature scaling and encoding",
+            "Cross-validation and hyperparameter tuning"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "End-to-End ML Project",
+          "topics": [
+            "Building a complete ML pipeline",
+            "Model selection and comparison",
+            "Presenting and deploying models (overview)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-011",
+      "title": "Power BI Developer Specialization",
+      "slug": "power-bi-specialization",
+      "description": "This specialization is aimed at learners who want to move beyond basic dashboards and become confident Power BI developers capable of supporting business teams. You will begin by learning how to import and transform data from multiple sources, then design robust star-schema data models that stay performant as your datasets grow. After that, you will dive into DAX, writing calculated columns and measures that drive dynamic insights and support complex reporting requirements. You will also focus on designing clean, intuitive dashboards with the right charts, interactions and navigation so stakeholders can quickly find what they need. Finally, you will learn how to publish reports to the Power BI service, manage workspaces and permissions, and implement row-level security and governance practices that enterprises expect. By the end, you will be able to own the entire lifecycle of a Power BI solution from raw data to secure, production-ready reports.",
+      "shortDescription": "Go deep into Power BI for professional dashboards and data models.",
+      "category": "Data & Analytics",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "price": 499,
+      "originalPrice": 3299,
+      "instructor": "inst-006",
+      "rating": 4.7,
+      "studentsEnrolled": 210,
+      "thumbnail": "https://images.pexels.com/photos/669616/pexels-photo-669616.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Advanced Power BI features",
+        "Best practices for data models",
+        "Performance optimization techniques",
+        "Real-world dashboard assignments"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Power BI Setup and Data Modelling",
+          "topics": [
+            "Data import and transformation",
+            "Star schema design",
+            "Relationships and cardinality"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "DAX Essentials",
+          "topics": [
+            "Calculated columns and measures",
+            "Filter context and row context",
+            "Common DAX patterns"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Visual Design and UX",
+          "topics": [
+            "Designing intuitive dashboards",
+            "Using bookmarks and drill-through",
+            "Mobile layouts and themes"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Deployment and Governance",
+          "topics": [
+            "Publishing to Power BI Service",
+            "Workspaces and app distribution",
+            "Row-level security and governance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-012",
+      "title": "DevOps & Cloud Engineering Bootcamp",
+      "slug": "devops-cloud",
+      "description": "This bootcamp is built to give you real-world DevOps and cloud engineering skills by walking you through the modern toolchain used in high-performing engineering teams. You will first understand the DevOps mindset and learn how to use Git and branching strategies to collaborate effectively with developers. Then you will containerize applications with Docker, work with images and registries, and orchestrate workloads using Kubernetes so that services stay reliable and scalable. The program also covers setting up CI/CD pipelines that automatically build, test and deploy your applications to cloud environments, reducing manual effort and human error. Throughout the course, you will work with monitoring and logging tools, learn how to troubleshoot issues in distributed systems and think about reliability from day one. By graduation, you will have hands-on experience with the workflows that underpin modern DevOps roles and be ready to support real projects in production.",
+      "shortDescription": "Learn CI/CD, Docker, Kubernetes and cloud deployment workflows.",
+      "category": "Cloud & DevOps",
+      "level": "Intermediate to Advanced",
+      "duration": "12 weeks",
+      "price": 499,
+      "originalPrice": 4499,
+      "instructor": "inst-007",
+      "rating": 4.8,
+      "studentsEnrolled": 190,
+      "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        "Hands-on labs with Docker and Kubernetes",
+        "CI/CD pipelines with popular tools",
+        "Cloud deployment practice",
+        "Guided DevOps capstone project"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "DevOps Fundamentals",
+          "topics": [
+            "DevOps culture and principles",
+            "Version control workflows",
+            "Intro to CI/CD"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Containers with Docker",
+          "topics": [
+            "Docker images and containers",
+            "Docker Compose basics",
+            "Best practices for containerization"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "Kubernetes and Orchestration",
+          "topics": [
+            "K8s core concepts (pods, deployments, services)",
+            "Basic cluster operations",
+            "Deploying containerized apps"
+          ]
+        },
+        {
+          "week": 4,
+          "title": "Cloud and CI/CD Pipelines",
+          "topics": [
+            "Deploying to a cloud provider (overview)",
+            "Setting up CI/CD for a sample app",
+            "Monitoring and logging fundamentals"
+          ]
+        }
+      ]
+    }
+  ],
+  "instructors": [
+    {
+      "id": "inst-001",
+      "name": "Sarah Mitchell",
+      "title": "Senior Full Stack Developer",
+      "bio": "Former tech lead at Google with 10+ years of experience. Passionate about teaching practical, industry-relevant skills.",
+      "expertise": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "AWS"
+      ],
+      "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.9,
+      "studentsCount": 5432,
+      "coursesCount": 8,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#",
+        "github": "#"
+      }
+    },
+    {
+      "id": "inst-002",
+      "name": "Dr. Rajesh Kumar",
+      "title": "Data Science Lead",
+      "bio": "PhD in Machine Learning from MIT. Previously led data teams at Amazon and Microsoft.",
+      "expertise": [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Statistics"
+      ],
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.9,
+      "studentsCount": 4231,
+      "coursesCount": 6,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "inst-003",
+      "name": "Emily Chen",
+      "title": "Lead Product Designer",
+      "bio": "Award-winning designer with 8 years at top design agencies. Specializes in user-centered design.",
+      "expertise": [
+        "UI/UX Design",
+        "Figma",
+        "Design Systems",
+        "User Research"
+      ],
+      "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.8,
+      "studentsCount": 3821,
+      "coursesCount": 5,
+      "social": {
+        "linkedin": "#",
+        "dribbble": "#"
+      }
+    },
+    {
+      "id": "inst-004",
+      "name": "Michael Thompson",
+      "title": "Digital Marketing Strategist",
+      "bio": "Grew multiple startups from 0 to millions in revenue. Expert in growth marketing and SEO.",
+      "expertise": [
+        "SEO",
+        "Content Marketing",
+        "PPC",
+        "Analytics"
+      ],
+      "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.7,
+      "studentsCount": 6543,
+      "coursesCount": 12,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "inst-005",
+      "name": "Arjun Mehta",
+      "title": "Senior Java & Spring Boot Architect",
+      "bio": "Enterprise Java developer with over a decade of experience building large-scale systems using Spring Boot and microservices.",
+      "expertise": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "System Design"
+      ],
+      "image": "https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.8,
+      "studentsCount": 3120,
+      "coursesCount": 4,
+      "social": {
+        "linkedin": "#"
+      }
+    },
+    {
+      "id": "inst-006",
+      "name": "Neha Patel",
+      "title": "Analytics & BI Consultant",
+      "bio": "Business intelligence specialist helping companies build analytics platforms and dashboards with SQL and Power BI.",
+      "expertise": [
+        "SQL",
+        "Power BI",
+        "Excel",
+        "Business Analytics"
+      ],
+      "image": "https://images.pexels.com/photos/1181681/pexels-photo-1181681.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.8,
+      "studentsCount": 2890,
+      "coursesCount": 5,
+      "social": {
+        "linkedin": "#"
+      }
+    },
+    {
+      "id": "inst-007",
+      "name": "Vikram Singh",
+      "title": "DevOps & Cloud Engineer",
+      "bio": "Cloud and DevOps engineer experienced with Docker, Kubernetes and CI/CD for high-availability production systems.",
+      "expertise": [
+        "DevOps",
+        "Docker",
+        "Kubernetes",
+        "Cloud Platforms"
+      ],
+      "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.9,
+      "studentsCount": 2410,
+      "coursesCount": 3,
+      "social": {
+        "linkedin": "#"
+      }
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "blog-001",
+      "title": "10 Essential Skills Every Developer Needs in 2024",
+      "slug": "10-essential-skills-developers-2024",
+      "excerpt": "The tech landscape is evolving rapidly. Here are the must-have skills to stay competitive.",
+      "content": "Full article content would go here...",
+      "author": "Sarah Mitchell",
+      "authorImage": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-15",
+      "readTime": "8 min read",
+      "category": "Career",
+      "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": [
+        "Career",
+        "Skills",
+        "Development"
+      ]
+    },
+    {
+      "id": "blog-002",
+      "title": "How to Build Your First Machine Learning Model",
+      "slug": "build-first-machine-learning-model",
+      "excerpt": "A beginner-friendly guide to understanding and creating your first ML model using Python.",
+      "content": "Full article content would go here...",
+      "author": "Dr. Rajesh Kumar",
+      "authorImage": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-10",
+      "readTime": "12 min read",
+      "category": "Data Science",
+      "thumbnail": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": [
+        "Machine Learning",
+        "Python",
+        "Tutorial"
+      ]
+    },
+    {
+      "id": "blog-003",
+      "title": "The Future of Remote Learning: Trends to Watch",
+      "slug": "future-remote-learning-trends",
+      "excerpt": "Exploring how online education is transforming and what it means for learners worldwide.",
+      "content": "Full article content would go here...",
+      "author": "Emily Chen",
+      "authorImage": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-05",
+      "readTime": "6 min read",
+      "category": "Education",
+      "thumbnail": "https://images.pexels.com/photos/4145356/pexels-photo-4145356.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": [
+        "Education",
+        "Remote Learning",
+        "Trends"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-001",
+      "name": "Alex Johnson",
+      "role": "Software Engineer at Google",
+      "content": "TakeOff Upskill transformed my career. The practical projects and mentor support helped me land my dream job at Google!",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": "test-002",
+      "name": "Priya Sharma",
+      "role": "Data Scientist at Amazon",
+      "content": "The Data Science course was incredibly comprehensive. I went from knowing nothing about ML to deploying models in production.",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": "test-003",
+      "name": "David Lee",
+      "role": "UX Designer at Apple",
+      "content": "Best investment I made in my career. The UI/UX course gave me the skills and portfolio to break into big tech.",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-001",
+      "question": "What are the prerequisites for enrolling?",
+      "answer": "Most of our beginner courses require no prior experience. For intermediate and advanced courses, we recommend having basic knowledge of the subject area. Each course page lists specific prerequisites."
+    },
+    {
+      "id": "faq-002",
+      "question": "How long do I have access to course materials?",
+      "answer": "Once enrolled, you have lifetime access to all course materials, including future updates and additional content."
+    },
+    {
+      "id": "faq-003",
+      "question": "Do you offer job placement assistance?",
+      "answer": "Yes! We provide career guidance, resume reviews, interview preparation, and connect you with our hiring partners for job opportunities."
+    },
+    {
+      "id": "faq-004",
+      "question": "What is your refund policy?",
+      "answer": "We offer a 30-day money-back guarantee. If you're not satisfied with the course within the first 30 days, we'll refund your full payment, no questions asked."
+    },
+    {
+      "id": "faq-005",
+      "question": "Are the courses self-paced or scheduled?",
+      "answer": "Our courses are designed to be flexible. You can learn at your own pace, but we also have scheduled live sessions, office hours, and cohort-based learning for enhanced interaction."
+    },
+    {
+      "id": "faq-006",
+      "question": "Will I receive a certificate upon completion?",
+      "answer": "Yes, you'll receive a verified certificate of completion that you can share on LinkedIn and add to your resume."
+    }
+  ],
+  "pricingPlans": [
+    {
+      "id": "plan-001",
+      "name": "Single Course",
+      "price": "Varies",
+      "description": "Perfect for focused learning",
+      "features": [
+        "Access to one course",
+        "Lifetime access",
+        "Certificate of completion",
+        "Community support",
+        "Course materials"
+      ],
+      "cta": "Browse Courses",
+      "popular": false
+    },
+    {
+      "id": "plan-002",
+      "name": "Pro Bundle",
+      "price": 4999,
+      "originalPrice": 7999,
+      "description": "Best value for career transformation",
+      "features": [
+        "Access to 3 courses",
+        "Lifetime access",
+        "1-on-1 mentorship (5 sessions)",
+        "Priority support",
+        "Job placement assistance",
+        "All certificates"
+      ],
+      "cta": "Get Started",
+      "popular": true
+    },
+    {
+      "id": "plan-003",
+      "name": "All-Access Pass",
+      "price": 9999,
+      "originalPrice": 15999,
+      "description": "Ultimate learning experience",
+      "features": [
+        "Unlimited course access",
+        "Lifetime access to all courses",
+        "Unlimited 1-on-1 mentorship",
+        "Premium support",
+        "Dedicated career coach",
+        "Interview preparation",
+        "All certificates"
+      ],
+      "cta": "Go Premium",
+      "popular": false
+    }
+  ],
+
+  "courseextra": {
+    "course-001": {
+      "learn": [
+        "Build full-stack apps with React, Node.js and MongoDB",
+        "Design secure REST APIs and handle authentication",
+        "Deploy production-ready apps and follow best practices",
+        "Collaborate using Git, GitHub and modern workflows"
+      ],
+      "audience": [
+        "Students looking to become full-stack developers",
+        "Working professionals switching from non-tech roles",
+        "Frontend devs who want to learn backend & databases"
+      ]
+    },
+    "course-002": {
+      "learn": [
+        "Use Python for data analysis, cleaning and visualization",
+        "Implement core machine learning algorithms from scratch",
+        "Train, tune and evaluate classification & regression models",
+        "Work with real-world datasets and deploy simple ML pipelines"
+      ],
+      "audience": [
+        "Beginners in Data Science with basic Python knowledge",
+        "Engineers who want to move into ML roles",
+        "Analytics professionals upgrading from Excel to ML"
+      ]
+    },
+    "course-003": {
+      "learn": [
+        "Design responsive interfaces using Figma",
+        "Conduct user research and usability testing",
+        "Create wireframes, prototypes and design systems",
+        "Build a strong portfolio with case studies"
+      ],
+      "audience": [
+        "Aspiring UI/UX designers starting from scratch",
+        "Developers who want to understand design better",
+        "Product managers who work closely with design teams"
+      ]
+    },
+    "course-004": {
+      "learn": [
+        "Understand core AWS services like EC2, S3, RDS and Lambda",
+        "Design secure, scalable cloud architectures",
+        "Prepare for AWS certification exams",
+        "Deploy and monitor real workloads on AWS"
+      ],
+      "audience": [
+        "Developers who want to move into cloud roles",
+        "System admins and DevOps engineers",
+        "Students planning AWS certifications"
+      ]
+    },
+    "course-005": {
+      "learn": [
+        "Build cross-platform apps with React Native",
+        "Integrate APIs, navigation, storage and authentication",
+        "Prepare apps for App Store & Play Store submission",
+        "Use modern patterns for scalable mobile apps"
+      ],
+      "audience": [
+        "Web devs who want to enter mobile development",
+        "Students looking to ship their first mobile app",
+        "Founders building MVPs for their startups"
+      ]
+    },
+    "course-006": {
+      "learn": [
+        "Plan and execute end-to-end digital marketing campaigns",
+        "Use SEO, content, social media and paid ads together",
+        "Measure performance using analytics tools",
+        "Build marketing funnels that convert visitors to customers"
+      ],
+      "audience": [
+        "Freelancers and agency owners",
+        "Founders and business owners growing online presence",
+        "Students aspiring for marketing & growth roles"
+      ]
+    },
+    "course-007": {
+      "learn": [
+        "Build full-stack applications using Python, Django and REST APIs",
+        "Design relational database models and work with ORM",
+        "Implement authentication, authorization and secure file handling",
+        "Deploy Django apps to production environments"
+      ],
+      "audience": [
+        "Students who know basic Python and want to enter web development",
+        "Working professionals moving into backend / full-stack roles",
+        "Founders who want to build production-grade MVPs with Python"
+      ]
+    },
+    "course-008": {
+      "learn": [
+        "Use Java and Spring Boot to build enterprise backends",
+        "Expose REST APIs and integrate with modern frontends",
+        "Implement security, validation and error handling",
+        "Deploy Java services in production environments"
+      ],
+      "audience": [
+        "Students with core Java knowledge aiming for Java developer roles",
+        "Backend developers who want to formalize Spring Boot skills",
+        "Engineers preparing for enterprise Java interviews"
+      ]
+    },
+    "course-009": {
+      "learn": [
+        "Perform data cleaning and analysis with Excel and SQL",
+        "Write analytical SQL queries for business questions",
+        "Create interactive dashboards and reports in Power BI",
+        "Present insights clearly to business stakeholders"
+      ],
+      "audience": [
+        "Students and freshers targeting data analyst roles",
+        "Working professionals moving from operations/finance to analytics",
+        "Anyone who works with data and wants stronger reporting skills"
+      ]
+    },
+    "course-010": {
+      "learn": [
+        "Understand the core ideas behind machine learning",
+        "Implement common ML algorithms using scikit-learn",
+        "Evaluate models with the right metrics and validation",
+        "Build and ship end-to-end ML mini-projects"
+      ],
+      "audience": [
+        "Beginners with basic Python looking to enter AI/ML",
+        "Software engineers transitioning into ML roles",
+        "Students preparing for ML internships and projects"
+      ]
+    },
+    "course-011": {
+      "learn": [
+        "Design strong data models for BI use cases",
+        "Write DAX to create powerful measures and calculations",
+        "Build user-friendly dashboards for business teams",
+        "Publish, secure and manage Power BI content"
+      ],
+      "audience": [
+        "Analysts who already use Power BI and want to go deeper",
+        "Excel / SQL users moving into BI developer roles",
+        "Consultants building dashboards for clients"
+      ]
+    },
+    "course-012": {
+      "learn": [
+        "Apply DevOps principles to modern software projects",
+        "Containerize applications using Docker",
+        "Deploy and manage workloads on Kubernetes",
+        "Set up CI/CD pipelines and cloud deployments"
+      ],
+      "audience": [
+        "Developers and sysadmins moving into DevOps roles",
+        "Students wanting a practical intro to DevOps tools",
+        "Teams building modern delivery pipelines for their apps"
+      ]
+    }
+  }
+}
