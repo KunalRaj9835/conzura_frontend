@@ -111,7 +111,7 @@ export default function EnquiryPage() {
 
                 <div className="p-4 border rounded-xl bg-gray-50">
                   <p className="text-sm text-gray-500">PHONE</p>
-                  <p className="font-semibold text-gray-800">+91 98765 43210</p>
+                  <p className="font-semibold text-gray-800">+91 91779 51075</p>
                 </div>
 
                 <div className="p-4 border rounded-xl bg-gray-50">
