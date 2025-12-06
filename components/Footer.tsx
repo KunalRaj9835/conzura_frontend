@@ -34,11 +34,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Disclaimer */}
-        <div className="mt-12 text-xs text-gray-300 leading-relaxed">
-          <span className="font-semibold">Disclaimer:</span> conzura does not charge
-          any money from job seekers. Report suspicious activities to info@conzuragroups.com.
-        </div>
+        
 
 
 <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 lg:gap-22 justify-center items-center mt-6">
