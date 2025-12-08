@@ -39,7 +39,7 @@ export default function AboutPage() {
 
             <div className="order-1 md:order-2">
               <Image
-                src="/about-us.png"
+                src="/About-us.png"
                 alt="Innovation and Intelligence"
                 width={600}
                 height={600}
