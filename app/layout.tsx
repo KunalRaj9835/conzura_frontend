@@ -17,8 +17,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Your Site",
-  description: "Description",
+  title: "Conzura Group",
+  description:
+    "Conzura Group engineers world-class digital solutions, including web development, app development, SEO marketing, UI/UX design, cloud services, and finance software. Trusted with 1500+ projects, we help businesses innovate, scale, and achieve digital excellence.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
