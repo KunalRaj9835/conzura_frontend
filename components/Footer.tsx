@@ -21,10 +21,9 @@ export default function Footer() {
 
           {/* Office */}
           <div>
-            <h3 className="font-semibold text-base mb-2">Hyderabad , India</h3>
+            <h3 className="font-semibold text-base mb-2">Las Vegas , Nevada</h3>
             <p className="leading-relaxed">
-              767, 2nd floor, Tngos colony,
-              Gachibowli, Hyderabad
+              United States of America (USA)
               <br />
               Email: info@conzuragroups.com
               <br />
