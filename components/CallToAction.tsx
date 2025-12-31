@@ -1,11 +1,15 @@
 export default function CallToAction() {
   const logos: string[] = [
-    "/client/amazon.svg",
-    "/client/cocacola.svg",
-    "/client/imax.svg",
-    "/client/Mercedesbenz.svg",
-    "/client/samsung.svg",
-    "/client/visa.svg",
+    "/client/aam2aam.png",
+    "/client/aic-sku.png",
+    "/client/Deep.jpeg",
+    "/client/eastwest-logo.png",
+    "/client/nationalmedical.png",
+    "/client/rasthetique.png",
+    "/client/sk.png",
+    "/client/SKyInformation.png",
+    "/client/keptal.svg",
+    "/client/Rawabit.webp",
   ];
 
   return (
@@ -17,7 +21,7 @@ export default function CallToAction() {
           <h2 className="text-3xl font-light text-[#0e355d]">
             Our Clients
           </h2>
-          <div className="h-1 w-20 bg-red-400 mx-auto mt-3 rounded-full"></div>
+          <div className="h-1 w-20 bg-[#2399b1] mx-auto mt-3 rounded-full"></div>
         </div>
 
         {/* Infinite Logo Carousel */}

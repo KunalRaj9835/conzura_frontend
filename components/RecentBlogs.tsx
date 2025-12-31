@@ -12,7 +12,7 @@ export default function RecentBlogs() {
       <SlideUp>
         <div className="text-center mb-4">
           <h2 className="text-3xl font-light text-[#0e355d]">Our Recent Blogs</h2>
-          <div className="h-1 w-20 bg-red-500 mx-auto mt-3 rounded-full"></div>
+          <div className="h-1 w-20 bg-[#2399b1] mx-auto mt-3 rounded-full"></div>
         </div>
       </SlideUp>
 

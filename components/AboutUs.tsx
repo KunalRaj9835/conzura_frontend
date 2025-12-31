@@ -8,17 +8,22 @@ import SlideUp from "@/components/SlideUp";
 export default function AboutUs() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
+      {/* Heading */}
       <div className="text-center mb-12">
         <SlideUp>
-          <h2 className="text-[2.5rem] font-extralight text-[#0e355d]">About Us</h2>
+          <h2 className="text-[2.5rem] font-extralight text-[#0e355d]">
+            About Us
+          </h2>
         </SlideUp>
 
         <SlideUp>
-          <div className="h-1 w-20 bg-red-400 mx-auto mt-3 rounded-full"></div>
+          <div className="h-1 w-20 bg-[#25b1c1] mx-auto mt-3 rounded-full"></div>
         </SlideUp>
       </div>
 
+      {/* Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Animation */}
         <div className="flex justify-center md:justify-start">
           <Lottie
             animationData={officeAnimation}
@@ -27,33 +32,26 @@ export default function AboutUs() {
           />
         </div>
 
+        {/* Text */}
         <div>
           <SlideUp>
-            <p className="text-gray-500 font-light leading-relaxed mb-6 text-justify">
-              conzura was established with a clear purpose: to understand diverse
-              organizational needs and connect them with the right talent
-              through precise, insight-driven mapping. With strong domain
-              expertise across IT Services, Automotive, Aerospace, Automation,
-              and emerging technologies, we specialize in identifying
-              professionals who integrate seamlessly into business environments
-              and deliver immediate value. Our processes are guided by deep
-              market intelligence, technical leadership, and ISO-certified
-              quality systems, enabling us to provide dependable staffing and
-              engineering support tailored to specific industry challenges.
+            <p className="text-gray-600 font-light leading-relaxed mb-6 text-justify">
+              Conzura Soft Solutions is a team of creative designers and
+              passionate developers committed to building digital experiences
+              that help businesses grow and evolve into strong, competitive
+              brands. We focus on understanding business goals deeply and
+              translating them into scalable, user-focused, and future-ready
+              solutions.
             </p>
           </SlideUp>
 
           <SlideUp>
-            <p className="text-gray-500 font-light leading-relaxed mb-6 text-justify">
-              Backed by extensive research on skill availability, talent
-              landscapes, and technology trends, conzura consistently delivers
-              human capital solutions that accelerate business outcomes. Our
-              commitment to effective “Talent Mobility” ensures organizations
-              gain access to agile, capable, and job-ready professionals who
-              strengthen execution and drive growth. As a trusted partner,
-              conzura continues to bridge the gap between opportunity and
-              talent—empowering companies to scale with confidence and stay
-              competitive in a rapidly evolving market.
+            <p className="text-gray-600 font-light leading-relaxed mb-6 text-justify">
+              With experience across diverse industries and technologies, we
+              combine design thinking, engineering excellence, and strategic
+              execution to deliver measurable results. From concept to
+              deployment, our solutions are crafted to perform, adapt, and scale
+              as businesses grow in an ever-changing digital landscape.
             </p>
           </SlideUp>
 

@@ -53,14 +53,14 @@ export default function FooterNewsletter() {
   return (
     <section className="bg-[#0e355d] py-16 px-6 relative overflow-hidden text-sm">
 
-      <div className="absolute bottom-0 left-0 w-full h-10 bg-red-500 transform rotate-[-2deg] origin-left"></div>
+      <div className="absolute bottom-0 left-0 w-full h-10 bg-[#2399b0] transform rotate-[-2deg] origin-left"></div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
 
         <div>
-          <h2 className="text-2xl font-semibold text-red-500 leading-snug">
-            Don't Miss Out on Our Monthly  
-            <br /> Newsletter
+          <h2 className="text-2xl font-semibold text-[#2399b0] leading-snug">
+            Don't Miss Out on Our New
+            <br /> Product
           </h2>
         </div>
 
@@ -95,7 +95,7 @@ export default function FooterNewsletter() {
           {/* Submit Button */}
           <button
             onClick={handleSubscribe}
-            className="inline-flex items-center justify-center bg-[#0e72b5] text-white font-medium w-full h-11 rounded-md transition-all duration-300 hover:bg-[#095c92] text-sm"
+            className="inline-flex items-center justify-center bg-red-500 text-white font-medium w-full h-11 rounded-md transition-all duration-300 hover:bg-red-600 text-sm"
           >
             Subscribe
           </button>

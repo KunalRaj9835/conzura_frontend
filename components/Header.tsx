@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+
 interface ArrowProps {
   isOpen: boolean;
 }
@@ -17,12 +18,12 @@ const Arrow = ({ isOpen }: ArrowProps) => (
 
 type MenuKey =
   | "tech"
-  | "domain"
+  | "product"
   | "services"
   | "courses"
   | "company"
   | "tech-mobile"
-  | "domain-mobile"
+  | "product-mobile"
   | "courses-mobile"
   | "services-mobile"
   | "company-mobile"
@@ -65,34 +66,27 @@ export default function Header() {
           ${showTop ? "max-h-16 opacity-100" : "max-h-0 opacity-0"}
         `}
       >
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-end gap-6 text-sm text-gray-700">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/header/phone2.svg"
+              alt="phone"
+              width={20}
+              height={20}
+            />
+            <span>+9191779 51075</span>
+          </div>
 
-
-<div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-end gap-6 text-sm text-gray-700">
-
-  <div className="flex items-center gap-2">
-    <Image
-      src="/header/phone2.svg"
-      alt="phone"
-      width={20}
-      height={20}
-    />
-    <span>+9191779 51075</span>
-  </div>
-
-  <div className="flex items-center gap-2">
-    <Image
-      src="/header/email.svg"
-      alt="email"
-      width={20}
-      height={20}
-    />
-    <span>info@conzuragroups.com</span>
-  </div>
-
-</div>
-
-
-
+          <div className="flex items-center gap-2">
+            <Image
+              src="/header/email.svg"
+              alt="email"
+              width={20}
+              height={20}
+            />
+            <span>info@conzuragroups.com</span>
+          </div>
+        </div>
       </div>
 
       {/* Navigation */}
@@ -110,56 +104,27 @@ export default function Header() {
             {/* WHY US */}
             <a href="/#whyus" className="hover:text-red-500">Why Us</a>
 
-            {/* TECHNOLOGY EXPERTISE */}
+            {/* PRODUCT */}
             <div
               className="relative"
-              onMouseEnter={() => handleEnter("tech")}
+              onMouseEnter={() => handleEnter("product")}
               onMouseLeave={handleLeave}
             >
               <button className="hover:text-red-500 flex items-center gap-1">
-                Technology Expertise
-                <Arrow isOpen={openMenu === "tech"} />
-              </button>
-
-              <div
-                className={`absolute right-0 mt-2 bg-white shadow-lg rounded p-4 w-64
-                  transition-all duration-300 origin-top
-                  ${openMenu === "tech"
-                    ? "opacity-100 translate-y-0 max-h-96"
-                    : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"}
-              `}
-              >
-                <a href="/data/data-modernization" className="block py-2 hover:text-red-500">Data Modernization</a>
-                <a href="/data/aritifical-intelligence" className="block py-2 hover:text-red-500">Aritifical Intelligence</a>
-                <a href="/data/ai-powered-operations" className="block py-2 hover:text-red-500">AI powerd opertaion</a>
-              </div>
-            </div>
-
-            {/* DOMAIN */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleEnter("domain")}
-              onMouseLeave={handleLeave}
-            >
-              <button className="hover:text-red-500 flex items-center gap-1">
-                Domain
-                <Arrow isOpen={openMenu === "domain"} />
+                Product
+                <Arrow isOpen={openMenu === "product"} />
               </button>
 
               <div
                 className={`absolute right-0 mt-2 bg-white shadow-lg rounded p-4 w-72
                   transition-all duration-300 origin-top
-                  ${openMenu === "domain"
+                  ${openMenu === "product"
                     ? "opacity-100 translate-y-0 max-h-96"
                     : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"}
               `}
               >
-                <a href="/case-study/case1" className="block py-2 hover:text-red-500">IT Services & Digital Engineering</a>
-                <a href="/case-study/case2" className="block py-2 hover:text-red-500">Automotive Engineering</a>
-                <a href="/case-study/case3" className="block py-2 hover:text-red-500">Aerospace & Defence</a>
-                <a href="/case-study/case4" className="block py-2 hover:text-red-500">Industrial Automation</a>
-                <a href="/case-study/case5" className="block py-2 hover:text-red-500">Healthcare Technology</a>
-                <a href="/case-study/case6" className="block py-2 hover:text-red-500">IoT & Embedded Systems</a>
+                <a href="/Product/Ticketing" className="block py-2 hover:text-red-500">Ticketing Tool</a>
+                <a href="/Product/Sales" className="block py-2 hover:text-red-500">Sales CRM</a>
               </div>
             </div>
 
@@ -182,48 +147,49 @@ export default function Header() {
                     : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"}
               `}
               >
-                <a href="/talent-intelligence" className="block py-2 hover:text-red-500">Talent Intelligence</a>
-                <a href="/talent-acquisition" className="block py-2 hover:text-red-500">Talent Acquisition</a>
-                <a href="/global-peo-service" className="block py-2 hover:text-red-500">Global PEO Service</a>
-                <a href="/rpo" className="block py-2 hover:text-red-500">Recruitment Process Outsourcing</a>
-                <a href="/executive-search" className="block py-2 hover:text-red-500">Executive Search</a>
+                <a href="/Web-Development" className="block py-2 hover:text-red-500">Web Development</a>
+                <a href="/App-Development" className="block py-2 hover:text-red-500">APP Development</a>
+                <a href="/Web-Hosting" className="block py-2 hover:text-red-500">Web Hosting</a>
+                <a href="/Digital-Marketing" className="block py-2 hover:text-red-500">Digital Marketing</a>
               </div>
             </div>
-            {/* COURSES */}
-<div
-  className="relative"
-  onMouseEnter={() => handleEnter("courses")}
-  onMouseLeave={handleLeave}
->
-  <button className="hover:text-red-500 flex items-center gap-1">
-    Courses
-    <Arrow isOpen={openMenu === "courses"} />
-  </button>
 
-  <div
-    className={`absolute right-0 mt-2 bg-white shadow-lg rounded p-4 w-96
-      transition-all duration-300 origin-top
-      ${
-        openMenu === "courses"
-          ? "opacity-100 translate-y-0 max-h-96"
-          : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"
-      }
-    `}
-  >
-    <a href="/courses/full-stack-web-development-bootcamp" className="block py-1 hover:text-red-500">Full Stack Web Development Bootcamp</a>
-    <a href="/courses/data-science-machine-learning-masterclass" className="block py-1 hover:text-red-500">Data Science & Machine Learning Masterclass</a>
-    <a href="/courses/ui-ux-design-professional-certificate" className="block py-1 hover:text-red-500">UI/UX Design Professional Certificate</a>
-    <a href="/courses/cloud-computing-aws" className="block py-1 hover:text-red-500">Cloud Computing (AWS)</a>
-    <a href="/courses/mobile-app-development-react-native" className="block py-1 hover:text-red-500">Mobile App Development – React Native</a>
-    <a href="/courses/digital-marketing-seo-mastery" className="block py-1 hover:text-red-500">Digital Marketing & SEO Mastery</a>
-    <a href="/courses/full-stack-python" className="block py-1 hover:text-red-500">Full Stack Python</a>
-    <a href="/courses/full-stack-java" className="block py-1 hover:text-red-500">Full Stack Java</a>
-    <a href="/courses/data-analytics" className="block py-1 hover:text-red-500">Data Analytics</a>
-    <a href="/courses/ai-ml-foundations" className="block py-1 hover:text-red-500">AI & ML Foundations</a>
-    <a href="/courses/power-bi-specialization" className="block py-1 hover:text-red-500">Power BI Specialization</a>
-    <a href="/courses/devops-cloud" className="block py-1 hover:text-red-500">DevOps & Cloud</a>
-  </div>
-</div>
+            {/* COURSES */}
+            <div
+              className="relative"
+              onMouseEnter={() => handleEnter("courses")}
+              onMouseLeave={handleLeave}
+            >
+              <button className="hover:text-red-500 flex items-center gap-1">
+                Courses
+                <Arrow isOpen={openMenu === "courses"} />
+              </button>
+
+              <div
+                className={`absolute right-0 mt-2 bg-white shadow-lg rounded p-4 w-96
+                  transition-all duration-300 origin-top
+                  ${
+                    openMenu === "courses"
+                      ? "opacity-100 translate-y-0 max-h-96"
+                      : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"
+                  }
+                `}
+              >
+                <a href="/courses/full-stack-web-development-bootcamp" className="block py-1 hover:text-red-500">Full Stack Web Development Bootcamp</a>
+                <a href="/courses/data-science-machine-learning-masterclass" className="block py-1 hover:text-red-500">Data Science & Machine Learning Masterclass</a>
+                <a href="/courses/ui-ux-design-professional-certificate" className="block py-1 hover:text-red-500">UI/UX Design Professional Certificate</a>
+                <a href="/courses/cloud-computing-aws" className="block py-1 hover:text-red-500">Cloud Computing (AWS)</a>
+                <a href="/courses/mobile-app-development-react-native" className="block py-1 hover:text-red-500">Mobile App Development – React Native</a>
+                <a href="/courses/digital-marketing-seo-mastery" className="block py-1 hover:text-red-500">Digital Marketing & SEO Mastery</a>
+                <a href="/courses/full-stack-python" className="block py-1 hover:text-red-500">Full Stack Python</a>
+                <a href="/courses/full-stack-java" className="block py-1 hover:text-red-500">Full Stack Java</a>
+                <a href="/courses/data-analytics" className="block py-1 hover:text-red-500">Data Analytics</a>
+                <a href="/courses/ai-ml-foundations" className="block py-1 hover:text-red-500">AI & ML Foundations</a>
+                <a href="/courses/power-bi-specialization" className="block py-1 hover:text-red-500">Power BI Specialization</a>
+                <a href="/courses/devops-cloud" className="block py-1 hover:text-red-500">DevOps & Cloud</a>
+              </div>
+            </div>
+
 
 
             {/* COMPANY */}
@@ -241,16 +207,26 @@ export default function Header() {
                 className={`absolute right-0 mt-2 bg-white shadow-lg rounded p-4 w-44
                   transition-all duration-300 origin-top
                   ${openMenu === "company"
-                    ? "opacity-100 translate-y-0 max-h-52"
+                    ? "opacity-100 translate-y-0 max-h-40"
                     : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"}
               `}
               >
                 <a href="/about" className="block py-2 hover:text-red-500">About Us</a>
-                <a href="/careers" className="block py-2 hover:text-red-500">Careers</a>
                 <a href="/blog" className="block py-2 hover:text-red-500">Blog</a>
-                <a href="/contact-us" className="block py-2 hover:text-red-500">Contact</a>
+
               </div>
             </div>
+                        {/* CAREERS - Now standalone */}
+            <a href="/careers" className="hover:text-red-500">Careers</a>
+             <span className="h-5 w-px bg-gray-300"></span>
+
+            {/* CONTACT US BUTTON */}
+            <a 
+              href="/contact-us" 
+              className="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition-colors"
+            >
+              Contact Us
+            </a>
 
           </div>
 
@@ -276,54 +252,26 @@ export default function Header() {
             {/* WHY US */}
             <a href="/#whyus" className="hover:text-red-500">Why Us</a>
 
-            {/* TECH */}
+            {/* PRODUCT */}
             <div>
               <button
                 onClick={() =>
-                  setOpenMenu(openMenu === "tech-mobile" ? null : "tech-mobile")
+                  setOpenMenu(openMenu === "product-mobile" ? null : "product-mobile")
                 }
                 className="hover:text-red-500 flex items-center gap-1 w-full text-left"
               >
-                Technology Expertise
-                <Arrow isOpen={openMenu === "tech-mobile"} />
+                Product
+                <Arrow isOpen={openMenu === "product-mobile"} />
               </button>
 
               <div
                 className={`
                   overflow-hidden transition-all duration-300 pl-4
-                  ${openMenu === "tech-mobile" ? "max-h-80 mt-2" : "max-h-0"}
+                  ${openMenu === "product-mobile" ? "max-h-96 mt-2" : "max-h-0"}
                 `}
               >
-                <a href="/data/data-modernization" className="block py-2 hover:text-red-500">Data Modernization</a>
-                <a href="/data/aritifical-intelligence" className="block py-2 hover:text-red-500">Aritifical Intelligence</a>
-                <a href="/data/ai-powered-operations" className="block py-2 hover:text-red-500">AI powerd opertaion</a>
-              </div>
-            </div>
-
-            {/* DOMAIN */}
-            <div>
-              <button
-                onClick={() =>
-                  setOpenMenu(openMenu === "domain-mobile" ? null : "domain-mobile")
-                }
-                className="hover:text-red-500 flex items-center gap-1 w-full text-left"
-              >
-                Domain
-                <Arrow isOpen={openMenu === "domain-mobile"} />
-              </button>
-
-              <div
-                className={`
-                  overflow-hidden transition-all duration-300 pl-4
-                  ${openMenu === "domain-mobile" ? "max-h-96 mt-2" : "max-h-0"}
-                `}
-              >
-                <a href="/case-study/case1" className="block py-2">IT Services & Digital Engineering</a>
-                <a href="/case-study/case2" className="block py-2">Automotive Engineering</a>
-                <a href="/case-study/case3" className="block py-2">Aerospace & Defence</a>
-                <a href="/case-study/case4" className="block py-2">Industrial Automation</a>
-                <a href="/case-study/case5" className="block py-2">Healthcare Technology</a>
-                <a href="/case-study/case6" className="block py-2">IoT & Embedded Systems</a>
+                <a href="/Product/Ticketing" className="block py-2 hover:text-red-500">Ticketing Tool</a>
+                <a href="/Product/Sales" className="block py-2 hover:text-red-500">Sales CRM</a>
               </div>
             </div>
 
@@ -345,46 +293,47 @@ export default function Header() {
                   ${openMenu === "services-mobile" ? "max-h-96 mt-2" : "max-h-0"}
                 `}
               >
-                <a href="/talent-intelligence" className="block py-2">Talent Intelligence</a>
-                <a href="/talent-acquisition" className="block py-2">Talent Acquisition</a>
-                <a href="/global-peo-service" className="block py-2">Global PEO Service</a>
-                <a href="/rpo" className="block py-2">Recruitment Process Outsourcing</a>
-                <a href="/executive-search" className="block py-2">Executive Search</a>
+                <a href="/Web-Development" className="block py-2 hover:text-red-500">Web Development</a>
+                <a href="/App-Development" className="block py-2 hover:text-red-500">APP Development</a>
+                <a href="/Web-Hosting" className="block py-2 hover:text-red-500">Web Hosting</a>
+                <a href="/Digital-Marketing" className="block py-2 hover:text-red-500">Digital Marketing</a>
               </div>
             </div>
+
             {/* COURSES */}
-<div>
-  <button
-    onClick={() =>
-      setOpenMenu(openMenu === "courses-mobile" ? null : "courses-mobile")
-    }
-    className="hover:text-red-500 flex items-center gap-1 w-full text-left"
-  >
-    Courses
-    <Arrow isOpen={openMenu === "courses-mobile"} />
-  </button>
+            <div>
+              <button
+                onClick={() =>
+                  setOpenMenu(openMenu === "courses-mobile" ? null : "courses-mobile")
+                }
+                className="hover:text-red-500 flex items-center gap-1 w-full text-left"
+              >
+                Courses
+                <Arrow isOpen={openMenu === "courses-mobile"} />
+              </button>
 
-  <div
-    className={`
-      overflow-hidden transition-all duration-300 pl-4
-      ${openMenu === "courses-mobile" ? "max-h-[600px] mt-2" : "max-h-0"}
-    `}
-  >
-    <a href="/courses/full-stack-web-development-bootcamp" className="block py-1">Full Stack Web Development Bootcamp</a>
-    <a href="/courses/data-science-machine-learning-masterclass" className="block py-1">Data Science & Machine Learning Masterclass</a>
-    <a href="/courses/ui-ux-design-professional-certificate" className="block py-1">UI/UX Design Professional Certificate</a>
-    <a href="/courses/cloud-computing-aws" className="block py-1">Cloud Computing (AWS)</a>
-    <a href="/courses/mobile-app-development-react-native" className="block py-1">Mobile App Development – React Native</a>
-    <a href="/courses/digital-marketing-seo-mastery" className="block py-1">Digital Marketing & SEO Mastery</a>
-    <a href="/courses/full-stack-python" className="block py-1">Full Stack Python</a>
-    <a href="/courses/full-stack-java" className="block py-1">Full Stack Java</a>
-    <a href="/courses/data-analytics" className="block py-1">Data Analytics</a>
-    <a href="/courses/ai-ml-foundations" className="block py-1">AI & ML Foundations</a>
-    <a href="/courses/power-bi-specialization" className="block py-1">Power BI Specialization</a>
-    <a href="/courses/devops-cloud" className="block py-1">DevOps & Cloud</a>
-  </div>
-</div>
+              <div
+                className={`
+                  overflow-hidden transition-all duration-300 pl-4
+                  ${openMenu === "courses-mobile" ? "max-h-[600px] mt-2" : "max-h-0"}
+                `}
+              >
+                <a href="/courses/full-stack-web-development-bootcamp" className="block py-1 hover:text-red-500">Full Stack Web Development Bootcamp</a>
+                <a href="/courses/data-science-machine-learning-masterclass" className="block py-1 hover:text-red-500">Data Science & Machine Learning Masterclass</a>
+                <a href="/courses/ui-ux-design-professional-certificate" className="block py-1 hover:text-red-500">UI/UX Design Professional Certificate</a>
+                <a href="/courses/cloud-computing-aws" className="block py-1 hover:text-red-500">Cloud Computing (AWS)</a>
+                <a href="/courses/mobile-app-development-react-native" className="block py-1 hover:text-red-500">Mobile App Development – React Native</a>
+                <a href="/courses/digital-marketing-seo-mastery" className="block py-1 hover:text-red-500">Digital Marketing & SEO Mastery</a>
+                <a href="/courses/full-stack-python" className="block py-1 hover:text-red-500">Full Stack Python</a>
+                <a href="/courses/full-stack-java" className="block py-1 hover:text-red-500">Full Stack Java</a>
+                <a href="/courses/data-analytics" className="block py-1 hover:text-red-500">Data Analytics</a>
+                <a href="/courses/ai-ml-foundations" className="block py-1 hover:text-red-500">AI & ML Foundations</a>
+                <a href="/courses/power-bi-specialization" className="block py-1 hover:text-red-500">Power BI Specialization</a>
+                <a href="/courses/devops-cloud" className="block py-1 hover:text-red-500">DevOps & Cloud</a>
+              </div>
+            </div>
 
+           
 
             {/* COMPANY */}
             <div>
@@ -401,15 +350,24 @@ export default function Header() {
               <div
                 className={`
                   overflow-hidden transition-all duration-300 pl-4
-                  ${openMenu === "company-mobile" ? "max-h-60 mt-2" : "max-h-0"}
+                  ${openMenu === "company-mobile" ? "max-h-40 mt-2" : "max-h-0"}
                 `}
               >
-                <a href="/about" className="block py-2">About Us</a>
-                <a href="/careers" className="block py-2">Careers</a>
-                <a href="/blog" className="block py-2">Blog</a>
-                <a href="/contact-us" className="block py-2">Contact</a>
+                <a href="/about" className="block py-2 hover:text-red-500">About Us</a>
+                <a href="/blog" className="block py-2 hover:text-red-500">Blog</a>
+
               </div>
             </div>
+             {/* CAREERS - Now standalone */}
+            <a href="/careers" className="hover:text-red-500">Careers</a>
+
+            {/* CONTACT US BUTTON */}
+            <a 
+              href="/contact-us" 
+              className="bg-red-500 text-white px-6 py-3 rounded text-center hover:bg-red-600 transition-colors mt-2"
+            >
+              Contact Us
+            </a>
 
           </div>
         </div>

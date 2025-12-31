@@ -116,6 +116,12 @@ body {
   animation: slideUp 0.7s ease-out forwards;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 @keyframes slideUp {
   to {
     opacity: 1;
