@@ -172,49 +172,50 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             <div className="text-black">
-              <h1 className="text-4xl md:text-5xl font-extralight mb-6">
-                Get in Touch with<br />conzura Tech
-              </h1>
-              
-              <p className="text-lg mb-6 text-black text-justify">
-                At conzura Tech, we specialize in providing end-to-end recruitment solutions tailored to meet your unique needs.
-              </p>
-              
-              <p className="text-lg mb-6 text-black text-justify">
-                Discover how our comprehensive services, including
-              </p>
-              
-              <ul className="space-y-3 mb-8 text-justify">
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Talent Intelligence</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Talent Acquisition</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Global PEO & EOR</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Remote Hiring</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Recruitment Process Outsourcing</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 text-2xl">✓</span>
-                  <span className="text-black">Board Room Hiring</span>
-                </li>
-              </ul>
-              
-              <p className="text-lg text-black text-justify">
-                can transform your hiring process. Contact us today to connect with top-tier talent and streamline your recruitment strategy.
-              </p>
-            </div>
+  <h1 className="text-4xl md:text-5xl font-extralight mb-6">
+    Get in Touch with<br />Conzura Soft Solution
+  </h1>
+
+  <p className="text-lg mb-6 text-black text-justify">
+    At Conzura Soft Solution, we deliver scalable digital solutions designed to help businesses build, grow, and streamline their operations.
+  </p>
+
+  <p className="text-lg mb-6 text-black text-justify">
+    Explore how our technology services and enterprise products can support your digital transformation.
+  </p>
+
+  <ul className="space-y-3 mb-8 text-justify">
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">Web Development</span>
+    </li>
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">App Development</span>
+    </li>
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">Web Hosting & Cloud Solutions</span>
+    </li>
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">Digital Marketing</span>
+    </li>
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">Ticketing Software</span>
+    </li>
+    <li className="flex items-start">
+      <span className="text-red-500 mr-2 text-2xl">✓</span>
+      <span className="text-black">Sales CRM Software</span>
+    </li>
+  </ul>
+
+  <p className="text-lg text-black text-justify">
+    Connect with Conzura Soft Solution to build reliable, future-ready digital products tailored to your business needs.
+  </p>
+</div>
+
 
             <div className="bg-white rounded-lg shadow-xl p-8">
               
