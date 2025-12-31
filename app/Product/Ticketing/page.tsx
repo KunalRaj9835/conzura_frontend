@@ -18,12 +18,13 @@ import {
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import SlideIn from "@/components/SlideIn";
+import Link from "next/link";
 
 export default function ConzuraTicketingPage() {
   return (
     <main className="w-full text-gray-900">
       {/* HERO */}
-   <section className="relative min-h-[55vh] md:h-[55vh] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
+   <section className="relative min-h-[55vh]  md:h-[55vh] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
   <div className="absolute inset-0 bg-black/30" />
 
   <div className="relative z-10 max-w-7xl mx-auto h-full
@@ -42,9 +43,24 @@ export default function ConzuraTicketingPage() {
       <p className="mt-4 max-w-lg text-base lg:text-lg text-gray-300">
         Conzura Groups delivers a comprehensive ticketing solution that empowers teams to manage support requests efficiently through multi-account architecture, intelligent routing, and real-time collaboration.
       </p>
+      <Link href="/contact-us">
+  <button
+    className="
+      mt-6
+      px-6 py-3
+      rounded-md
+      bg-red-500 text-white text-sm font-medium
+      hover:bg-red-400 transition
+      mb-10 md:mb-0
+    "
+  >
+    Contact Us →
+  </button>
+</Link>
+
     </div>
 
-    {/* RIGHT: Video */}
+    {/* RIGHT: Video 
     <div className="flex md:justify-end pb-10 md:pb-0">
       <div className="w-full max-w-md">
         <div className="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-lg">
@@ -59,6 +75,7 @@ export default function ConzuraTicketingPage() {
         </div>
       </div>
     </div>
+    */}
 
   </div>
 </section>

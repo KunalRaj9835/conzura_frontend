@@ -85,13 +85,38 @@ const TechStackItem = ({ name, description, icon: Icon }: TechStackItemProps) =>
 
 export default function DigitalMarketingPage() {
   const miniCardLinks = [
-    { label: "SEO & SEM", href: "/marketing/seo-sem", img: "/mini/seo.jpeg" },
-    { label: "Social Media Marketing", href: "/marketing/social-media", img: "/mini/social.jpeg" },
-    { label: "Content Marketing", href: "/marketing/content-marketing", img: "/mini/content.jpeg" },
-    { label: "Email Marketing", href: "/marketing/email-marketing", img: "/mini/emailmarketing.jpeg" },
-    { label: "PPC Advertising", href: "/marketing/ppc-advertising", img: "/mini/ppc.jpeg" },
-    { label: "Analytics & Reporting", href: "/marketing/analytics", img: "/mini/analytics.jpeg" },
-  ];
+  {
+    label: "SEO & SEM",
+    href: "/marketing/seo-sem",
+    img: "/Market/se.jpeg",
+  },
+  {
+    label: "Social Media Marketing",
+    href: "/marketing/social-media",
+    img: "/Market/social.jpg",
+  },
+  {
+    label: "Content Marketing",
+    href: "/marketing/content-marketing",
+    img: "/Market/content.jpg",
+  },
+  {
+    label: "Email Marketing",
+    href: "/marketing/email-marketing",
+    img: "/Market/emailm.webp",
+  },
+  {
+    label: "PPC Advertising",
+    href: "/marketing/ppc-advertising",
+    img: "/Market/ppc.png",
+  },
+  {
+    label: "Analytics & Reporting",
+    href: "/marketing/analytics",
+    img: "/Market/Analysis.png",
+  },
+];
+
 
   const features = [
     {
@@ -192,14 +217,7 @@ export default function DigitalMarketingPage() {
               campaigns. From SEO and social media to paid advertising and content marketing, 
               we deliver results that matter to your bottom line.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-md bg-red-500 text-white font-medium hover:bg-red-400 transition">
-                Get Started
-              </button>
-              <button className="px-6 py-3 rounded-md border border-gray-500 text-sm hover:border-red-400 hover:text-red-300 transition">
-                View Success Stories
-              </button>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -303,11 +321,12 @@ export default function DigitalMarketingPage() {
               We leverage industry-leading marketing tools and platforms for maximum impact
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {techStack.map((tech, index) => (
-              <TechStackItem key={index} {...tech} />
-            ))}
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+  {techStack.map((tech, index) => (
+    <TechStackItem key={index} {...tech} />
+  ))}
+</div>
+
         </div>
       </section>
 

@@ -85,12 +85,12 @@ const TechStackItem = ({ name, description, icon: Icon }: TechStackItemProps) =>
 
 export default function AppDevelopmentPage() {
   const miniCardLinks = [
-    { label: "Native Development", href: "/tech/native-development", img: "/mini/native.jpeg" },
-    { label: "Cross-Platform", href: "/tech/cross-platform", img: "/mini/crossplatform.jpeg" },
-    { label: "Mobile Backend", href: "/tech/mobile-backend", img: "/mini/mobilebackend.jpeg" },
-    { label: "App Security", href: "/tech/app-security", img: "/mini/appsecurity.jpeg" },
-    { label: "UI/UX Design", href: "/tech/mobile-design", img: "/mini/mobiledesign.jpeg" },
-    { label: "Testing & QA", href: "/tech/mobile-testing", img: "/mini/mobiletesting.jpeg" },
+    { label: "Native Development", href: "/tech/native-development", img: "/tech/Native.jpeg" },
+    { label: "Cross-Platform", href: "/tech/cross-platform", img: "/tech/cross.jpg" },
+    { label: "Mobile Backend", href: "/tech/mobile-backend", img: "/tech/Backend.jpg" },
+    { label: "App Security", href: "/tech/app-security", img: "/tech/security.webp" },
+    { label: "UI/UX Design", href: "/tech/mobile-design", img: "/tech/ui.avif" },
+    { label: "Testing & QA", href: "/tech/mobile-testing", img: "/tech/QA.webp" },
   ];
 
   const features = [
@@ -192,14 +192,7 @@ export default function AppDevelopmentPage() {
               to cross-platform solutions, we build applications that drive engagement and deliver 
               measurable results.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-md bg-red-500 text-white font-medium hover:bg-red-400 transition">
-                Get Started
-              </button>
-              <button className="px-6 py-3 rounded-md border border-gray-500 text-sm hover:border-red-400 hover:text-red-300 transition">
-                View Portfolio
-              </button>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -303,11 +296,12 @@ export default function AppDevelopmentPage() {
               We leverage the latest mobile technologies to build apps that users love
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {techStack.map((tech, index) => (
-              <TechStackItem key={index} {...tech} />
-            ))}
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+  {techStack.map((tech, index) => (
+    <TechStackItem key={index} {...tech} />
+  ))}
+</div>
+
         </div>
       </section>
 

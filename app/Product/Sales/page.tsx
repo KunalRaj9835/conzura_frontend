@@ -88,9 +88,7 @@ export default function SalesCRMPage() {
                 Contact Us →
               </button>
               </Link>
-              <button className="px-6 py-3 rounded-md border border-gray-500 text-sm hover:border-blue-400 hover:text-blue-300 transition">
-                Schedule Demo
-              </button>
+              
             </div>
           </div>
 

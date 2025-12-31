@@ -85,13 +85,38 @@ const TechStackItem = ({ name, description, icon: Icon }: TechStackItemProps) =>
 
 export default function WebHostingPage() {
   const miniCardLinks = [
-    { label: "Shared Hosting", href: "/hosting/shared-hosting", img: "/mini/shared.jpeg" },
-    { label: "VPS Hosting", href: "/hosting/vps-hosting", img: "/mini/vps.jpeg" },
-    { label: "Dedicated Servers", href: "/hosting/dedicated-servers", img: "/mini/dedicated.jpeg" },
-    { label: "Cloud Hosting", href: "/hosting/cloud-hosting", img: "/mini/cloudhosting.jpeg" },
-    { label: "WordPress Hosting", href: "/hosting/wordpress-hosting", img: "/mini/wordpress.jpeg" },
-    { label: "Email Hosting", href: "/hosting/email-hosting", img: "/mini/email.jpeg" },
-  ];
+  {
+    label: "Shared Hosting",
+    href: "/hosting/shared-hosting",
+    img: "/hosting/Shared.webp",
+  },
+  {
+    label: "VPS Hosting",
+    href: "/hosting/vps-hosting",
+    img: "/hosting/vps.jpg",
+  },
+  {
+    label: "Dedicated Servers",
+    href: "/hosting/dedicated-servers",
+    img: "/hosting/server.png",
+  },
+  {
+    label: "Cloud Hosting",
+    href: "/hosting/cloud-hosting",
+    img: "/hosting/Cloud.jpg",
+  },
+  {
+    label: "WordPress Hosting",
+    href: "/hosting/wordpress-hosting",
+    img: "/hosting/Wordpress.png",
+  },
+  {
+    label: "Email Hosting",
+    href: "/hosting/email-hosting",
+    img: "/hosting/email.jpg",
+  },
+];
+
 
   const features = [
     {
@@ -192,14 +217,7 @@ export default function WebHostingPage() {
               solutions. From shared hosting to dedicated servers, we provide the infrastructure 
               your business needs to thrive online.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-md bg-red-500 text-white font-medium hover:bg-red-400 transition">
-                Get Started
-              </button>
-              <button className="px-6 py-3 rounded-md border border-gray-500 text-sm hover:border-red-400 hover:text-red-300 transition">
-                Compare Plans
-              </button>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -303,11 +321,12 @@ export default function WebHostingPage() {
               Powered by industry-leading technologies and infrastructure
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {techStack.map((tech, index) => (
-              <TechStackItem key={index} {...tech} />
-            ))}
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+  {techStack.map((tech, index) => (
+    <TechStackItem key={index} {...tech} />
+  ))}
+</div>
+
         </div>
       </section>
 

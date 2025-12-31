@@ -196,14 +196,7 @@ export default function WebDevelopmentPage() {
               and scalable architectures. From cloud infrastructure to modern frameworks, we build 
               solutions that drive innovation.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-md bg-red-500 text-white font-medium hover:bg-red-400 transition">
-                Get Started
-              </button>
-              <button className="px-6 py-3 rounded-md border border-gray-500 text-sm hover:border-red-400 hover:text-red-300 transition">
-                View Case Studies
-              </button>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -307,11 +300,12 @@ export default function WebDevelopmentPage() {
               We work with industry-leading technologies to build reliable, maintainable applications
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {techStack.map((tech, index) => (
-              <TechStackItem key={index} {...tech} />
-            ))}
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+  {techStack.map((tech, index) => (
+    <TechStackItem key={index} {...tech} />
+  ))}
+</div>
+
         </div>
       </section>
 
