@@ -50,7 +50,7 @@ export default function Footer() {
   </p>
 
   <p className="text-xs">
-    © {new Date().getFullYear()} conzura Analytics Space. All Rights Reserved.
+    © {new Date().getFullYear()} Conzura Soft Solutions. All Rights Reserved.
   </p>
 </div>
 
