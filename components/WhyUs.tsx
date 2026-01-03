@@ -2,10 +2,6 @@
 
 import React, { ReactNode } from "react";
 import {
-  Lightbulb,
-  ShieldCheck,
-  Users,
-  Award,
   Briefcase,
   Smile,
   Clock,
@@ -78,9 +74,6 @@ export default function WhyUs(): React.ReactNode {
         </div>
       </SlideUp>
 
-      {/* Core Values */}
-      
-
       {/* Why We Stand Out */}
       <SlideUp>
         <SectionTitle title="Why Conzura Stands Out" />
@@ -140,24 +133,6 @@ function StatCard({ icon, value, label }: StatCardProps): React.ReactNode {
       <div className="flex justify-center mb-4">{icon}</div>
       <p className="text-3xl font-light text-[#25b1c1]">{value}</p>
       <p className="text-sm font-light text-[#0e355d] mt-1">{label}</p>
-    </div>
-  );
-}
-
-interface ValueCardProps {
-  icon: ReactNode;
-  title: string;
-  desc: string;
-}
-
-function ValueCard({ icon, title, desc }: ValueCardProps): React.ReactNode {
-  return (
-    <div className="bg-white shadow-md p-8 rounded-xl border border-black text-center hover:shadow-xl transition-all duration-300">
-      {icon}
-      <h4 className="text-xl font-light text-[#0e355d] mt-4 mb-2">
-        {title}
-      </h4>
-      <p className="text-sm font-light leading-relaxed">{desc}</p>
     </div>
   );
 }

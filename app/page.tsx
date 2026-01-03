@@ -1,33 +1,27 @@
+import dynamic from 'next/dynamic';
 import Carousel from "@/components/Carousel";
 import AboutUs from "@/components/AboutUs";
-import WhatWeOffer from "@/components/WhatWeOffer";
-import WhyUs from "@/components/WhyUs";
-import IndustrySpecialties from "@/components/IndustrySpecialties";
-import CallToAction from "@/components/CallToAction";
-import RecentBlogs from "@/components/RecentBlogs";
-import FooterNewsletter from "@/components/FooterNewsletter";
-import Footer from "@/components/Footer";
-import OurSolutions from "@/components/OurSolutions";
+
+// Lazy load components below the fold
+const WhyUs = dynamic(() => import("@/components/WhyUs"));
+const IndustrySpecialties = dynamic(() => import("@/components/IndustrySpecialties"));
+const CallToAction = dynamic(() => import("@/components/CallToAction"));
+const RecentBlogs = dynamic(() => import("@/components/RecentBlogs"));
+const FooterNewsletter = dynamic(() => import("@/components/FooterNewsletter"));
+const Footer = dynamic(() => import("@/components/Footer"));
+
 export default function Home() {
   return (
     <main>
-  <Carousel />
-  <AboutUs />
-  {/*
-  <div id = "oursolution">
-  <OurSolutions />
-  </div>
-   */}
-  <div id="whyus">
-    <WhyUs />
-  </div>
-
-
-  <CallToAction />
-  <RecentBlogs />
-  <FooterNewsletter />
-  <Footer />
-</main>
-
+      <Carousel />
+      <AboutUs />
+      <div id="whyus">
+        <WhyUs />
+      </div>
+      <CallToAction />
+      <RecentBlogs />
+      <FooterNewsletter />
+      <Footer />
+    </main>
   );
 }

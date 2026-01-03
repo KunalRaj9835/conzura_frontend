@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useCallback, useState, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import SlideUp from "./SlideUp";
-import ChargingButton from "./ChargingButton";
 import ChargingButton2 from "./ChargingButton2";
 
 interface SlideItem {
@@ -19,6 +18,8 @@ export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
+  const [loadedSlides, setLoadedSlides] = useState<Set<number>>(new Set([0]));
+  const videoRefs = useRef<{ [key: number]: HTMLVideoElement | null }>({});
 
   const SLIDES: SlideItem[] = [
     {
@@ -86,13 +87,46 @@ export default function Carousel() {
   useEffect(() => {
     if (!emblaApi) return;
 
-    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+    const onSelect = () => {
+      const index = emblaApi.selectedScrollSnap();
+      setSelectedIndex(index);
+      
+      // Load current slide and adjacent slides
+      setLoadedSlides(prev => {
+        const newSet = new Set(prev);
+        newSet.add(index);
+        // Preload previous slide
+        const prevIndex = index === 0 ? SLIDES.length - 1 : index - 1;
+        newSet.add(prevIndex);
+        // Preload next slide
+        const nextIndex = index === SLIDES.length - 1 ? 0 : index + 1;
+        newSet.add(nextIndex);
+        return newSet;
+      });
+
+      // Play/pause videos based on active slide
+      Object.keys(videoRefs.current).forEach((key) => {
+        const slideIndex = parseInt(key);
+        const video = videoRefs.current[slideIndex];
+        if (video) {
+          if (slideIndex === index) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        }
+      });
+    };
+    
     emblaApi.on("select", onSelect);
     onSelect();
-  }, [emblaApi]);
+  }, [emblaApi, SLIDES.length]);
 
   const isVideo = (url: string): boolean =>
     url.toLowerCase().endsWith(".mp4");
+
+  const getSlideIndex = (slideId: number): number =>
+    SLIDES.findIndex(s => s.id === slideId);
 
   return (
     <div className="relative overflow-hidden h-[95vh]">
@@ -100,6 +134,9 @@ export default function Carousel() {
         <div className="flex h-full">
           {SLIDES.map((slide) => {
             const isVideoSlide = isVideo(slide.bg);
+            const slideIndex = getSlideIndex(slide.id);
+            const shouldLoad = loadedSlides.has(slideIndex);
+            const isActive = selectedIndex === slideIndex;
 
             return (
               <div
@@ -124,7 +161,6 @@ export default function Carousel() {
                       style={{ background: "#000" }}
                     />
 
-                    {/* Desktop: Side by side, Mobile: Stacked */}
                     <div className="w-full h-full flex flex-col md:flex-row items-center relative z-10">
                       <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center px-6 md:px-10 lg:px-20">
                         <div className="text-white max-w-2xl">
@@ -147,36 +183,46 @@ export default function Carousel() {
                       </div>
 
                       <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-10">
-                        <video
-                          src={`/${slide.bg}`}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          className="max-w-full max-h-full object-contain"
-                        />
+                        {shouldLoad && (
+                          <video
+                            ref={(el) => {
+    videoRefs.current[slideIndex] = el;
+  }}
+                            src={`/${slide.bg}`}
+                            loop
+                            muted
+                            playsInline
+                            autoPlay={isActive}
+                            preload="metadata"
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        )}
                       </div>
                     </div>
                   </>
-                ) : /* Slide 2: App Development - #93d3f8 bg, video on left */
-                slide.id === 2 ? (
+                ) : slide.id === 2 ? (
                   <>
                     <div
                       className="absolute inset-0 z-[1]"
                       style={{ background: "#93d4f8" }}
                     />
 
-                    {/* Desktop: Video left, text right. Mobile: Text top, video bottom */}
                     <div className="w-full h-full flex flex-col md:flex-row items-center relative z-10">
                       <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-10 order-2 md:order-1">
-                        <video
-                          src={`/${slide.bg}`}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          className="max-w-full max-h-full object-contain"
-                        />
+                        {shouldLoad && (
+                          <video
+                            ref={(el) => {
+    videoRefs.current[slideIndex] = el;
+  }}
+                            src={`/${slide.bg}`}
+                            loop
+                            muted
+                            playsInline
+                            autoPlay={isActive}
+                            preload="none"
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        )}
                       </div>
 
                       <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center px-6 md:px-10 lg:px-20 order-1 md:order-2">
@@ -200,17 +246,20 @@ export default function Carousel() {
                       </div>
                     </div>
                   </>
-                ) : /* Slide 3: Web Hosting - Video background */
-                slide.id === 3 && isVideoSlide ? (
+                ) : slide.id === 3 && isVideoSlide ? (
                   <>
-                    <video
-                      src={`/${slide.bg}`}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="absolute inset-0 w-full h-full object-cover z-0"
-                    />
+                    {shouldLoad && (
+                      <video
+                        ref={(el) => {videoRefs.current[slideIndex] = el;}}
+                        src={`/${slide.bg}`}
+                        loop
+                        muted
+                        playsInline
+                        autoPlay={isActive}
+                        preload="none"
+                        className="absolute inset-0 w-full h-full object-cover z-0"
+                      />
+                    )}
 
                     <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent md:bg-black/50 z-[1]" />
 
@@ -232,14 +281,16 @@ export default function Carousel() {
                       </SlideUp>
                     </div>
                   </>
-                ) : /* Slides 4 & 5: Sales CRM and Ticketing - Image backgrounds */
-                (
+                ) : (
                   <>
-                    <img
-                      src={`/${slide.bg}`}
-                      alt={slide.title}
-                      className="absolute inset-0 w-full h-full object-cover z-0"
-                    />
+                    {shouldLoad && (
+                      <img
+                        src={`/${slide.bg}`}
+                        alt={slide.title}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover z-0"
+                      />
+                    )}
 
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent md:bg-black/50 z-[1]" />
 
@@ -272,6 +323,7 @@ export default function Carousel() {
       <button
         onClick={() => emblaApi?.scrollPrev()}
         className="absolute left-2 md:left-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl md:text-6xl font-bold opacity-80 hover:opacity-100"
+        aria-label="Previous slide"
       >
         &#8249;
       </button>
@@ -279,6 +331,7 @@ export default function Carousel() {
       <button
         onClick={() => emblaApi?.scrollNext()}
         className="absolute right-2 md:right-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl md:text-6xl font-bold opacity-80 hover:opacity-100"
+        aria-label="Next slide"
       >
         &#8250;
       </button>
