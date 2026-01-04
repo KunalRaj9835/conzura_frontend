@@ -27,7 +27,7 @@ export default function Carousel() {
       title: "Web Development",
       text: "Building modern, responsive, and high-performance web applications tailored to your business needs.",
       bg: "carousel/web.mp4",
-      href: "/web-development",
+      href: "/Web-Development",
       gifPosition: "right",
     },
     {
@@ -35,7 +35,7 @@ export default function Carousel() {
       title: "App Development",
       text: "Creating innovative mobile applications that deliver seamless user experiences across all platforms.",
       bg: "carousel/app.mp4",
-      href: "/app-development",
+      href: "/App-Development",
       gifPosition: "left",
     },
     {
@@ -43,7 +43,7 @@ export default function Carousel() {
       title: "Web Hosting",
       text: "Reliable and scalable hosting solutions to keep your digital presence running smoothly 24/7.",
       bg: "carousel/hosting.mp4",
-      href: "/web-hosting",
+      href: "/Web-Hosting",
     },
     {
       id: 4,
