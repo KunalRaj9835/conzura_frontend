@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 async function getJobById(id: string) {
   const res = await fetch(
@@ -27,6 +28,7 @@ export default async function JobDetailsPage(props: any) {
   }
 
   return (
+    <div> 
     <div className="max-w-5xl mx-auto px-6 py-20 space-y-14 font-[Poppins]">
 
       {/* TITLE */}
@@ -120,6 +122,8 @@ export default async function JobDetailsPage(props: any) {
           Apply Now
         </Link>
       </div>
+    </div>
+    <Footer />
     </div>
   );
 }
